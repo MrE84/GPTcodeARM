@@ -80,12 +80,7 @@ void loop() {
     String command = Serial.readStringUntil('\n'); // Read the command
     executeCommand(command);
   }
-pwm.setPWM(5,0,pulseWidth(0)); //WRIST_SERVO flat center
-delay(5000);
-pwm.setPWM(5,0,pulseWidth(90)); //WRIST_SERVO vertical
-delay(2000);
-pwm.setPWM(5,0,pulseWidth(180)); //WRIST_SERVO 180 rotation
-delay(5000);
+
 
 }
 
